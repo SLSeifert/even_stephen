@@ -12,9 +12,20 @@ button.addEventListener('click', ()=> {
     }
 });
 
+input.addEventListener('keypress', (e)=> {
+    if (e.key === 'Enter') {
+        button.click();
+    }
+});
+
 function evenStephen(num) {
-    if (num % 2 === 1) {
+/*     if (num % 2 === 1) {
         output.textContent = `${num} is odd!`;
-    } else output.textContent = `${num} is even!`;
+    } else { 
+        output.textContent = `${num} is even!`;
+    } */
+
+   output.textContent = num % 2 ? `${num} is odd!` : `${num} is even!`;
+
 }
 
