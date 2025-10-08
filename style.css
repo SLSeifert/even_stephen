@@ -24,3 +24,21 @@ h1 {
     "MORF" 15,
     "SHLN" 50;
 }
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 412px) {
+    label {
+        font-size: medium;
+    }
+}
